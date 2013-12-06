@@ -23,6 +23,10 @@
  **
  = (object) path element of the popup
  \*/
+
+var Raphael;
+module.exports = Raphael = require("raphael-browserify");
+
 Raphael.el.popup = function (dir, size, x, y) {
     var paper = this.paper || this[0].paper,
         bb, xy, center, cw, ch;
@@ -859,3 +863,8 @@ Raphael.g = {
         }
     }
 }
+
+require('./g.pie');
+require('./g.line');
+require('./g.dot');
+require('./g.bar');

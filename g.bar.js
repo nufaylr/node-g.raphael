@@ -5,6 +5,9 @@
  * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
  */
 (function () {
+    var Raphael;
+    module.exports = Raphael  = require("./g.raphael.js");
+
     var mmin = Math.min,
         mmax = Math.max;
 

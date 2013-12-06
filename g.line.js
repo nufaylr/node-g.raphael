@@ -6,6 +6,8 @@
  */
 
 (function () {
+    var Raphael;
+    module.exports = Raphael  = require("./g.raphael.js");
 
     function shrink(values, dim) {
         var k = values.length / dim,

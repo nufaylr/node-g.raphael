@@ -40,8 +40,10 @@
  > Usage
  | r.piechart(cx, cy, r, values, opts)
  \*/
- 
+
 (function () {
+    var Raphael;
+    module.exports = Raphael  = require("./g.raphael.js");
 
     function Piechart(paper, cx, cy, r, values, opts) {
         opts = opts || {};

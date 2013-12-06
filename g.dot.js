@@ -6,21 +6,24 @@
  */
 
 (function () {
-        var colorValue = function (value, total, s, b) {
-            return 'hsb(' + [Math.min((1 - value / total) * .4, 1), s || .75, b || .75] + ')';
-        };
- 
+    var Raphael;
+    module.exports = Raphael  = require("./g.raphael.js");
+
+    var colorValue = function (value, total, s, b) {
+        return 'hsb(' + [Math.min((1 - value / total) * .4, 1), s || .75, b || .75] + ')';
+    };
+
     function Dotchart(paper, x, y, width, height, valuesx, valuesy, size, opts) {
-        
+
         function drawAxis(ax) {
             +ax[0] && (ax[0] = chartinst.axis(x + gutter, y + gutter, width - 2 * gutter, minx, maxx, opts.axisxstep || Math.floor((width - 2 * gutter) / 20), 2, opts.axisxlabels || null, opts.axisxtype || "t", null, paper));
             +ax[1] && (ax[1] = chartinst.axis(x + width - gutter, y + height - gutter, height - 2 * gutter, miny, maxy, opts.axisystep || Math.floor((height - 2 * gutter) / 20), 3, opts.axisylabels || null, opts.axisytype || "t", null, paper));
             +ax[2] && (ax[2] = chartinst.axis(x + gutter, y + height - gutter + maxR, width - 2 * gutter, minx, maxx, opts.axisxstep || Math.floor((width - 2 * gutter) / 20), 0, opts.axisxlabels || null, opts.axisxtype || "t", null, paper));
             +ax[3] && (ax[3] = chartinst.axis(x + gutter - maxR, y + height - gutter, height - 2 * gutter, miny, maxy, opts.axisystep || Math.floor((height - 2 * gutter) / 20), 1, opts.axisylabels || null, opts.axisytype || "t", null, paper));
         }
-        
+
         //providing defaults
-        
+
         opts = opts || {};
         var chartinst = this;
         var xdim = chartinst.snapEnds(Math.min.apply(Math, valuesx), Math.max.apply(Math, valuesx), valuesx.length - 1),
@@ -119,7 +122,7 @@
  **
  * Set of Elements positioned above the symbols and mirroring them in size and shape. Covers are used as a surface for events capturing. Each cover has a property `'dot'` being a reference to the actual data-representing symbol. 
  **
- ** 
+ **
  \*/
         res.covers = covers;
  /*\
@@ -128,7 +131,7 @@
  **
  * Set of Elements containing the actual data-representing symbols.
  **
- ** 
+ **
  \*/
         res.series = series;
         res.push(series, axis, covers);
