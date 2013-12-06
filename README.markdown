@@ -2,6 +2,10 @@ Node-g.Raphaël
 --------------
 For more information, see: http://g.raphaeljs.com/
 
+Install:
+--------
+`$ npm install node-g.raphael`
+
 Usage:
 ------
 <pre>
