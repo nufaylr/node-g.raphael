@@ -20,8 +20,8 @@ Raphael.setWindow(win);
 var paper = Raphael(0, 0, 300, 300);
 paper.clear();
 
-var lines = paper.linechart(0, 0, 99, 99, [1,2,3,4,5], [1,3,9,16,25], { colors: ['#F00'] });
-var dots = paper.dotchart(0, 0, 620, 260, [1,2,3,4,5], [0,1,2,3,4], [4,3,2,4,6], { max: 5 });
+var lines = paper.linechart(0, 0, 300, 300, [1,2,3,4,5], [1,3,9,16,25], { colors: ['#F00'] });
+var dots = paper.dotchart(0, 0, 300, 160, [1,2,3,4,5], [0,1,2,3,4], [4,3,2,4,6], { max: 5 });
 
 var svg = doc.body.firstChild.outerHTML;
 require('fs').writeFile('graph.svg', svg, function (err) {
