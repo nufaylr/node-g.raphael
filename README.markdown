@@ -11,9 +11,7 @@ Usage:
 <pre>
 var Raphael = require('node-g.raphael');
 var jsdom = require('jsdom').jsdom;
-</pre>
-`var doc = jsdom('<html><head></head><body></body></html>');`
-<pre>
+var doc = jsdom('<html><head></head><body></body></html>');
 var win = doc.createWindow();
 Raphael.setWindow(win);
 
