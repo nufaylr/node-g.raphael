@@ -25,7 +25,7 @@
  \*/
 
 var Raphael;
-module.exports = Raphael = require("raphael-browserify");
+module.exports = Raphael = require("raphael");
 
 Raphael.el.popup = function (dir, size, x, y) {
     var paper = this.paper || this[0].paper,
