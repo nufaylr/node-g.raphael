@@ -23,7 +23,7 @@
     "raphael"
   ],
   "dependencies": {
-    "raphael-browserify": ">=2.1.0"
+    "raphael": ">=2.3.0"
   },
   "license": "MIT",
   "readmeFilename": "README.markdown",
