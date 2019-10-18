@@ -1,6 +1,6 @@
 {
   "name": "node-g.raphael",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": {
     "name": "Jignesh Kakadiya"
   },
@@ -23,13 +23,9 @@
     "raphael"
   ],
   "dependencies": {
-    "raphael-browserify": ">=2.0.0"
+    "raphael-browserify": ">=2.1.0"
   },
   "license": "MIT",
-  "engines": {
-    "node": ">=0.6"
-  },
-
   "readmeFilename": "README.markdown",
   "bugs": {
     "url": "https://github.com/jigneshhk/node-g.raphael/issues"
